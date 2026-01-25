@@ -1,5 +1,5 @@
 # Encoder Only Discriminator
-Data-driven global conformance checking with encoder-only discriminator architecture
+Data-driven global conformance checking with encoder-only discriminator architecture.
 It uses encoder-only Transformer discriminator, dynamic padding with attention masking, log / anti-log training setup.
 
 It reproduced experiments from the reference work with the above description. The experiments include:
