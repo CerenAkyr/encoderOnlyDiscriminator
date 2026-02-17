@@ -3,9 +3,9 @@ Data-driven global conformance checking with encoder-only discriminator architec
 It uses encoder-only Transformer discriminator, dynamic padding with attention masking, log / anti-log training setup.
 
 It reproduced experiments from the reference work with the above description. The experiments include:
-- Experiment 1: Controlled models
-- Experiment 2: Noise injection
-- Experiment 3: Real-life event logs
+- Experiment 1: Controlled models, 3000 log/antilog traces.
+- Experiment 2: Noise injection, 4000 log/antilog traces.
+- Experiment 3: Real-life event logs 30000 log/antilog traces. Was not enough for training the classifier fully. But had to due to computational constraints. 
 
 ## Reference Work:
 The work is directly the extension of the log/anti-log discriminative framework introduced by Peeperkorn et al. (2023) by replacing the LSTM encoder with a self-attention-based Transformer, while preserving the original fitness and precision definitions.
